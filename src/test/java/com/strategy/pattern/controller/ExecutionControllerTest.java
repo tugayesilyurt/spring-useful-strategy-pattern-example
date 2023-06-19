@@ -48,7 +48,7 @@ public class ExecutionControllerTest {
     public void testExecuteHashMap() throws Exception {
         mockMvc = MockMvcBuilders.standaloneSetup(executionController).build();
 
-        ExecuteRequest executeRequest = new ExecuteRequest("HashMapBean", 10, 5);
+        ExecuteRequest executeRequest = new ExecuteRequest("Addition", 10, 5);
         Integer expectedResult = 15;
 
         Mockito.when(hashMapCommand.process(Mockito.any(ExecuteRequest.class))).thenReturn(expectedResult);
