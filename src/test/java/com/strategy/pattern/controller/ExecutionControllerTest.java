@@ -36,8 +36,6 @@ public class ExecutionControllerTest {
         ExecuteRequest executeRequest = new ExecuteRequest("Addition", 10, 5);
         Integer expectedResult = 15;
 
-        Mockito.when(hashMapCommand.process(Mockito.any(ExecuteRequest.class))).thenReturn(expectedResult);
-
         mockMvc.perform(MockMvcRequestBuilders.post("/v1/execute/enumeration")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(asJsonString(executeRequest)))
