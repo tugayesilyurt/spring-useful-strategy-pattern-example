@@ -1,5 +1,8 @@
 # Two useful Strategy Pattern example ( java,spring boot )
 
+
+Medium article link -> [Medium Link](https://medium.com/@htyesilyurt/two-useful-strategy-pattern-example-java-spring-boot-65e77f42852c).
+
 Two Strategy Pattern
 ------------
 - `Enumaration Strategy Pattern`
